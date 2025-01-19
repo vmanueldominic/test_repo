@@ -1,0 +1,114 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.main-content{
+    width: 60%; /* Adjust the width to control line wrapping */
+    margin: 0 auto;
+    margin-bottom: 100px; 
+}
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/src/assets/LandingGradient.png') no-repeat center center;
+    background-size: cover;
+}
+.card-container {
+    display: flex;
+    margin: 0 auto; /* Centers the cards horizontally */
+    align-items: flex-start; /* Align cards to the top */
+    width: 100%; /* Make sure it takes the full width */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns the header content to the left */
+    margin-bottom: 20px; /* Adjust spacing below the header */
+    width: 100%; /* Full width of the container */
+}
+
+header h1, header p {
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Make header elements take up full width */
+    margin: 5px 0; /* Adjust space between elements */
+    font-family: "Arial", sans-serif;
+}
+
+.header-1{
+    color: #88DFFF;
+}
+.header-2{
+    color: #E7E7E7;
+
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 15;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+
+header h1 {
+
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 15;
+    font-style: normal;
+
+    
+}
+
+header p {
+    font-size: 1rem; 
+    color: #E7E7E7; 
+
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+}
+.text-field {
+    width: 100%; /* Make the textarea take up the full width of the container */
+    height: 100px;
+    padding: 20px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+.refresh-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adjust the margin to position the button between the cards and text field */
+    padding: 10px;
+    background-color: transparent; /* Background color of the button */
+    
+    border: none; /* Remove the border */
+    outline: none; /* Remove outline on focus */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50px; /* Adjust size to fit the icon */
+    height: 50px; /* Same height as width for a circular button */
+}
+
+
+.refresh-button svg {
+    color: #e7e7e7; /* Color of the refresh icon */
+}
+
+.refresh-button:hover svg {
+    color: #0056b3; /* Darker color on hover */
+}
+
+.refresh-text{
+    color: #e7e7e7;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 15;
+    font-style: normal;
+}

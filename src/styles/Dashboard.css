@@ -1,0 +1,26 @@
+.main-layout {
+  display: flex;
+  height: 100vh; /* Ensure the layout fills the viewport height */
+  width: 100vw; /* Ensure the layout fills the viewport width */
+  overflow: hidden; /* Prevent scrolling caused by unwanted gaps */
+}
+
+.iframe-container {
+  flex-grow: 1; /* Allow the iframe to take all the remaining space */
+  transition: margin-left 0.3s ease;
+  height: 100%; /* Ensure the iframe container matches the viewport height */
+}
+
+.iframe-collapsed {
+  margin-left: 60px; /* Matches collapsed sidebar width */
+}
+
+.iframe-expanded {
+  margin-left: 240px; /* Matches expanded sidebar width */
+}
+
+.powerbi-iframe {
+  width: 100%; /* Stretch the iframe to fill its container */
+  height: 100%; /* Stretch the iframe to fill its container */
+  border: none; /* Remove any border around the iframe */
+}

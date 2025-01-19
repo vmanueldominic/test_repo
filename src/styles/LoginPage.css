@@ -1,0 +1,187 @@
+/* Reset body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login Page Styling */
+.login-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: url('/src/assets/OresightLoginLogo.png') no-repeat;
+    background-position: left center; 
+
+    
+}
+
+.left-pane {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+    margin-left: 200px;
+}
+
+.logo {
+    max-width: 338px;
+    max-height: 77px;
+}
+.loginLogo{
+    margin-bottom: 20px;
+}
+
+.right-pane {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.8); Optional translucent background */
+}
+
+.form-container {
+    width: 60%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Border around the form */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.25); /* Light shadow for depth */
+    text-align: center;
+    
+}
+.form-group {
+    margin-bottom: 20px;
+    color: #A5A5A5;
+    
+}
+
+.form-group input::placeholder {
+    color: #A5A5A5;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    padding: 8px
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 20px;
+    transition: border-color 0.3s ease;
+}
+.form-group input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+.form-links {
+    margin-bottom: 20px;
+}
+
+.form-links a {
+    color: #202020;
+    text-decoration: none;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
+.form-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 35px;
+}
+
+.sign-in-btn, .sign-up-btn {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+
+.sign-in-btn {
+    background-color: #202020;
+    border-radius: 20px;
+
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-style: bold;
+    font-weight: 600;
+    color: white;
+}
+
+
+.sign-up {
+    margin-top: 20px;
+
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 13px;
+    font-style: bold;
+    font-weight: 600;
+    color: black;
+}
+
+
+/* Password Container */
+.password-container {
+    position: relative; /* Ensures the icon is positioned relative to this container */
+    width: 100%; /* Make sure it takes full width of the parent */
+}
+
+/* Password Input */
+.password-container input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: border-color 0.3s ease;
+    padding-right: 40px; /* Add space for the icon */
+   ;
+}
+
+.password-container input::placeholder {
+    color: #A5A5A5;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    padding: 8px
+   
+}
+
+/* Position the Icon Inside the Input */
+.password-toggle {
+    position: absolute;
+    right: 15px; /* Position it on the right inside the input field */
+    top: 50%;
+    transform: translateY(-50%); /* Center it vertically */
+    cursor: pointer;
+}
+
+/* Icon Styling */
+.password-icon {
+    color: #007bff; /* Customize the color of the icon */
+}
